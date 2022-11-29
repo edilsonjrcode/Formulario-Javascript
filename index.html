@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="assets/css/design.css" media="all">
+    <link rel="stylesheet" href="assets/css/responsivo.css" media="all">
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+
+    <section id="secao">
+        <form autocomplete="on">
+
+            <fieldset id="campo1">
+
+                <div class="flutuaEsquerda">
+                <label for="nome">
+                    Nome</label><br>
+                    <input class="style-input" id="nome" name="nome" type="text" placeholder="Ex: Gabriely" minlength="3" autocomplete="name" required>
+                </div>
+
+                <div id="clear">
+                <label for="email">
+                    E-mail</label><br>
+                <input class="style-input" id="email" name="email" type="email" placeholder="Ex: email@gmail.com" required>
+                <br>
+
+                <label for="idade">
+                    Idade</label><br>
+                <input class="style-input" id="idade" name="idade" type="text" placeholder="Ex: 18" autocomplete="street-address" required>
+                </div>
+
+                <div class="marcar">
+                <label for="maior-idade">
+                    Maior de idade?</label><br>
+                <label for="maior-idade">Sim</label>
+                <input class="radio" id="maior-idade" type="radio" name="radio" value="true">
+                <label for="maior-idade2">Não</label>
+                <input class="radio" id="maior-idade2" type="radio" name="radio" value="false">
+                </div>
+
+                <div class="marcar">
+                    <label id="biu" class="lbl-marcar" for="newslatter">
+                        Deseja receber newslatter?</label><br>
+                    <label>Sim</label>
+                    <input class="check" id="newslatter" type="checkbox" value="true">
+                </div>
+
+                <div>
+                    <label class="lbl-marcar" for="mensagem">
+                        Mensagem</label><br>
+                    <textarea id="mensagem"></textarea>
+                </div>
+
+            </fieldset>
+            <br>
+        
+            <div id="parte2">
+                    <input id="enviar" class="botao" type="button" value="Enviar">
+                    <input id="limpar" class="botao" type="button" value="Limpar">
+            </div><br>
+        </form>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>
